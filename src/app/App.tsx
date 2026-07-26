@@ -310,7 +310,7 @@ import { Star, ChevronLeft, ChevronRight, ExternalLink, FileText } from "lucide-
 function App() {
   const [isCarouselPaused, setIsCarouselPaused] = useState(false);
   const [docPage, setDocPage] = useState(0);
-  const [transcriptPage, setTranscriptPage] = useState(0);
+  const [transcriptPage, setTranscriptPage] = useState(3);
   const [designPage, setDesignPage] = useState(0);
 
   const designGroups = [
@@ -798,7 +798,7 @@ function App() {
     },
   ];
 
-  const [lang, setLang] = useState<'ID' | 'EN'>('ID');
+  const [lang, setLang] = useState<'ID' | 'EN'>('EN');
 
   return (
     <div className="min-h-screen bg-[#F4F3F0] font-sans">
@@ -814,7 +814,7 @@ function App() {
       {/* Work Experience Section - Reverse Chronological Order (Latest to Earliest) */}
       <section id="experience" className="pt-[15pt] pb-0 bg-[#F4F3F0]">
         <div className="w-full px-[10pt]">
-          <div className="flex flex-col items-center justify-center gap-1 mb-[25pt] opacity-40 -mt-[10pt]">
+          <div className="flex flex-col items-center justify-center gap-1 mt-[7pt] mb-[18pt] opacity-40">
             <h2 className="text-xl md:text-2xl font-bold text-[#222222]">Working Experiences</h2>
             <p className="text-sm font-cambria text-[#222222] text-center">Professional Journey, Career Path, and Strategic Contributions</p>
           </div>
@@ -1119,7 +1119,7 @@ function App() {
                           <img 
                             key={transcriptPage === 3 ? 'pdikti' : 'kemdikbud'}
                             src={transcriptPage === 3 
-                              ? "https://github.com/dhnaath/Portofolio/blob/main/PDIKTI%20BARU.png?raw=true" 
+                              ? "https://github.com/dhnaath/portfolio.dhnaath.com/blob/main/resources/pddikti%20baru%2026-7.png?raw=true" 
                               : "https://github.com/dhnaath/Resources-Portofolio/blob/main/Desain%20tanpa%20judul%20(1).png?raw=true"}
                             alt="Document"
                             className={`object-cover object-center pointer-events-none select-none ${
